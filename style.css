@@ -76,6 +76,8 @@ body {
     margin: 0;
 }
 
+/**** table ****/
+
 .table {
     margin: 20px 0;
     width: 100%;
@@ -111,6 +113,8 @@ body {
     padding: 10px 0;
 }
 
+/**** div total ****/
+
 .total {
     display: flex;
     justify-content: space-between;
@@ -128,7 +132,7 @@ body {
     font-weight: 600;
 }
 
-/**** Responsive design ****/
+/**** Responsive design version mobile ****/
 
 @media screen and (max-width: 572px) {
     .invoice__container {
