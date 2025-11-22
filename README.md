@@ -1,5 +1,7 @@
 ## VOTRE TICKET DE CAISSE VIRTUEL 🧾
 
+![Design preview for the project](./img/banner.png)
+
 ## Le challenge
 
 Création d'un ticket de caisse virtuel en HTML5 et CSS3.
