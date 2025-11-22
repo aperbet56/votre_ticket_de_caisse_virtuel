@@ -131,6 +131,10 @@ body {
 /**** Responsive design ****/
 
 @media screen and (max-width: 572px) {
+    .invoice__container {
+        padding: 20px;
+    }
+
     .invoice__logo {
         filter: drop-shadow(0 0.5vw 0.5vw var(--black)) drop-shadow(0.5vw 0vw 0.5vw var(--black));
     }
