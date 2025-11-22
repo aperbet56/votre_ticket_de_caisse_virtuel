@@ -1,0 +1,119 @@
+/**** Importation de la police Muli ****/
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** Variables css ****/
+
+:root {
+    --light-grey: #eff0f3;
+    --white: #fffffe;
+    --black: #0d0d0d;
+    --red: #d9376e;
+}
+
+/**** body ****/
+
+body {
+    width: 100%;
+    padding-inline: 16px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-grey);
+    color: var(--black);
+    font-family: "Muli", sans-serif;
+}
+
+
+/***** div invoice__container ****/
+
+.invoice__container {
+    width: 450px;
+    max-width: 100%;
+    height: auto;
+    background-color: var(--white);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.invoice__logo {
+    width: 95px;
+    height: 120px;
+    filter: drop-shadow(0 0.1vw 0.1vw #000000) drop-shadow(0.1vw 0vw 0.1vw #000000);
+    margin: 30px auto;
+}
+
+
+.invoice__title {
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin: 0;
+}
+
+.table {
+    margin: 20px 0;
+    width: 100%;
+}
+
+
+.table tr>*:nth-child(1) {
+    text-align: left;
+}
+
+.table tr td:nth-child(1) {
+    letter-spacing: 1px;
+}
+
+.table tr>*:nth-child(2) {
+    text-align: center;
+}
+
+.table tr>*:nth-child(3) {
+    font-weight: 300;
+    text-align: right;
+}
+
+.table thead th {
+    color: #999999;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.table tr td {
+    border-bottom: 1px dotted #cccccc;
+    padding: 10px 0;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    color: var(--red);
+    font-weight: 600;
+}
+
+.result {
+    font-size: 16px;
+    padding-block: 20px;
+    margin: auto;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
