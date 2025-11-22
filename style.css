@@ -33,6 +33,7 @@ body {
     background-color: var(--light-grey);
     color: var(--black);
     font-family: "Muli", sans-serif;
+    transform-style: preserve-3d;
 }
 
 
@@ -53,8 +54,17 @@ body {
 .invoice__logo {
     width: 95px;
     height: 120px;
-    filter: drop-shadow(0 0.1vw 0.1vw #000000) drop-shadow(0.1vw 0vw 0.1vw #000000);
+    filter: drop-shadow(0 0.2vw 0.2vw var(--black)) drop-shadow(0.2vw 0vw 0.2vw var(--black));
     margin: 30px auto;
+    animation: animationLogo 2.5s infinite linear;
+}
+
+/**** Animation animationLogo ****/
+
+@keyframes animationLogo {
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
 
@@ -116,4 +126,12 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+/**** Responsive design ****/
+
+@media screen and (max-width: 572px) {
+    .invoice__logo {
+        filter: drop-shadow(0 0.5vw 0.5vw var(--black)) drop-shadow(0.5vw 0vw 0.5vw var(--black));
+    }
 }
